@@ -7,11 +7,10 @@ afterEach(cleanup);
 
 describe("PlayerList component tests", () => {
   it("should render the correct number of players", () => {
-    const { container, getByTestId } = render(
+    const { getByTestId } = render(
       <PlayerList players={playerData} />,
     );
     const playerList = getByTestId("player-list");
-    console.log(PlayerList);
 
     expect(playerList.children.length).toEqual(playerData.length);
   });
