@@ -2,6 +2,8 @@ import React from "react";
 import { render, cleanup } from "@testing-library/react";
 import Player from "../../../components/PlayerList/Player";
 
+afterEach(cleanup);
+
 describe("Single Player component", () => {
   it("Displays a player's info", () => {
     const player = {
