@@ -19,7 +19,7 @@ class App extends Component {
         <PlayerList players={players} />
       </div>
     ) : (
-      <div>Haven't found any players yet...</div>
+      <div data-testid="app">Haven't found any players yet...</div>
     );
   }
 }

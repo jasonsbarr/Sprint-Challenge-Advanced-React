@@ -27,10 +27,16 @@ describe("App component tests", () => {
       return Promise.resolve(response);
     });
 
+    let app;
+
     await act(async () => {
       const { getByTestId } = render(<App />, container);
+
+      app = getByTestId("app");
     });
 
+    expect(app.textContent).toMatch(/Alex Morgan/);
+    expect(app.textContent).toMatch(/Vivianne Miedema/);
     expect(container.firstChild).toMatchSnapshot();
   });
 });
