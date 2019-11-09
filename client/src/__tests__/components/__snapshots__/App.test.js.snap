@@ -1,3 +1,517 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`App component tests Shows a list of users 1`] = `null`;
+exports[`App component tests Shows a list of users 1`] = `
+<div
+  data-testid="app"
+>
+  <input
+    placeholder="Search for players by name..."
+    type="search"
+    value=""
+  />
+  <ul
+    data-testid="player-list"
+  >
+    <li>
+      <span>
+        Player:
+      </span>
+       
+      Alex Morgan
+       – 
+      <span>
+        Team:
+      </span>
+       
+      United States
+       –
+       
+      <span>
+        Searches:
+      </span>
+       
+      100
+    </li>
+    <li>
+      <span>
+        Player:
+      </span>
+       
+      Megan Rapinoe
+       – 
+      <span>
+        Team:
+      </span>
+       
+      United States
+       –
+       
+      <span>
+        Searches:
+      </span>
+       
+      99
+    </li>
+    <li>
+      <span>
+        Player:
+      </span>
+       
+      Marta
+       – 
+      <span>
+        Team:
+      </span>
+       
+      Brazil
+       –
+       
+      <span>
+        Searches:
+      </span>
+       
+      18
+    </li>
+    <li>
+      <span>
+        Player:
+      </span>
+       
+      Rose Lavelle
+       – 
+      <span>
+        Team:
+      </span>
+       
+      United States
+       –
+       
+      <span>
+        Searches:
+      </span>
+       
+      11
+    </li>
+    <li>
+      <span>
+        Player:
+      </span>
+       
+      Carli Lloyd
+       – 
+      <span>
+        Team:
+      </span>
+       
+      United States
+       –
+       
+      <span>
+        Searches:
+      </span>
+       
+      9
+    </li>
+    <li>
+      <span>
+        Player:
+      </span>
+       
+      Julie Ertz
+       – 
+      <span>
+        Team:
+      </span>
+       
+      United States
+       –
+       
+      <span>
+        Searches:
+      </span>
+       
+      8
+    </li>
+    <li>
+      <span>
+        Player:
+      </span>
+       
+      Christen Press
+       – 
+      <span>
+        Team:
+      </span>
+       
+      United States
+       –
+       
+      <span>
+        Searches:
+      </span>
+       
+      8
+    </li>
+    <li>
+      <span>
+        Player:
+      </span>
+       
+      Kelley O'Hara
+       – 
+      <span>
+        Team:
+      </span>
+       
+      United States
+       –
+       
+      <span>
+        Searches:
+      </span>
+       
+      8
+    </li>
+    <li>
+      <span>
+        Player:
+      </span>
+       
+      Tobin Heath
+       – 
+      <span>
+        Team:
+      </span>
+       
+      United States
+       –
+       
+      <span>
+        Searches:
+      </span>
+       
+      7
+    </li>
+    <li>
+      <span>
+        Player:
+      </span>
+       
+      Wendie Renard
+       – 
+      <span>
+        Team:
+      </span>
+       
+      France
+       –
+       
+      <span>
+        Searches:
+      </span>
+       
+      7
+    </li>
+    <li>
+      <span>
+        Player:
+      </span>
+       
+      Kosovare Asllani
+       – 
+      <span>
+        Team:
+      </span>
+       
+      Sweden
+       –
+       
+      <span>
+        Searches:
+      </span>
+       
+      6
+    </li>
+    <li>
+      <span>
+        Player:
+      </span>
+       
+      Lieke Martens
+       – 
+      <span>
+        Team:
+      </span>
+       
+      Netherlands
+       –
+       
+      <span>
+        Searches:
+      </span>
+       
+      6
+    </li>
+    <li>
+      <span>
+        Player:
+      </span>
+       
+      Amandine Henry
+       – 
+      <span>
+        Team:
+      </span>
+       
+      France
+       –
+       
+      <span>
+        Searches:
+      </span>
+       
+      5
+    </li>
+    <li>
+      <span>
+        Player:
+      </span>
+       
+      Ali Krieger
+       – 
+      <span>
+        Team:
+      </span>
+       
+      United States
+       –
+       
+      <span>
+        Searches:
+      </span>
+       
+      5
+    </li>
+    <li>
+      <span>
+        Player:
+      </span>
+       
+      Mallory Pugh
+       – 
+      <span>
+        Team:
+      </span>
+       
+      United States
+       –
+       
+      <span>
+        Searches:
+      </span>
+       
+      4
+    </li>
+    <li>
+      <span>
+        Player:
+      </span>
+       
+      Samantha Kerr
+       – 
+      <span>
+        Team:
+      </span>
+       
+      Australia
+       –
+       
+      <span>
+        Searches:
+      </span>
+       
+      4
+    </li>
+    <li>
+      <span>
+        Player:
+      </span>
+       
+      Christiane Endler
+       – 
+      <span>
+        Team:
+      </span>
+       
+      Chile
+       –
+       
+      <span>
+        Searches:
+      </span>
+       
+      4
+    </li>
+    <li>
+      <span>
+        Player:
+      </span>
+       
+      Daniëlle van de Donk
+       – 
+      <span>
+        Team:
+      </span>
+       
+      Netherlands
+       –
+       
+      <span>
+        Searches:
+      </span>
+       
+      4
+    </li>
+    <li>
+      <span>
+        Player:
+      </span>
+       
+      Lucy Bronze
+       – 
+      <span>
+        Team:
+      </span>
+       
+      England
+       –
+       
+      <span>
+        Searches:
+      </span>
+       
+      4
+    </li>
+    <li>
+      <span>
+        Player:
+      </span>
+       
+      Ashlyn Harris
+       – 
+      <span>
+        Team:
+      </span>
+       
+      United States
+       –
+       
+      <span>
+        Searches:
+      </span>
+       
+      4
+    </li>
+    <li>
+      <span>
+        Player:
+      </span>
+       
+      Eugénie Le Sommer
+       – 
+      <span>
+        Team:
+      </span>
+       
+      France
+       –
+       
+      <span>
+        Searches:
+      </span>
+       
+      4
+    </li>
+    <li>
+      <span>
+        Player:
+      </span>
+       
+      Jackie Groenen
+       – 
+      <span>
+        Team:
+      </span>
+       
+      Netherlands
+       –
+       
+      <span>
+        Searches:
+      </span>
+       
+      4
+    </li>
+    <li>
+      <span>
+        Player:
+      </span>
+       
+      Abby Dahlkemper
+       – 
+      <span>
+        Team:
+      </span>
+       
+      United States
+       –
+       
+      <span>
+        Searches:
+      </span>
+       
+      3
+    </li>
+    <li>
+      <span>
+        Player:
+      </span>
+       
+      Steph Houghton
+       – 
+      <span>
+        Team:
+      </span>
+       
+      England
+       –
+       
+      <span>
+        Searches:
+      </span>
+       
+      3
+    </li>
+    <li>
+      <span>
+        Player:
+      </span>
+       
+      Vivianne Miedema
+       – 
+      <span>
+        Team:
+      </span>
+       
+      Netherlands
+       –
+       
+      <span>
+        Searches:
+      </span>
+       
+      3
+    </li>
+  </ul>
+</div>
+`;

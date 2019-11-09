@@ -37,6 +37,6 @@ describe("App component tests", () => {
 
     expect(app.textContent).toMatch(/Alex Morgan/);
     expect(app.textContent).toMatch(/Vivianne Miedema/);
-    expect(container.firstChild).toMatchSnapshot();
+    expect(app).toMatchSnapshot();
   });
 });
