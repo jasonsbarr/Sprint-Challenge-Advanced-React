@@ -5,10 +5,10 @@ import useFilter from "../../hooks/useFilter";
 const PlayerList = ({ players }) => {
   const [searchString, setSearchString] = useState("");
 
-  const searchFn = player =>
-    player.name.toLowerCase().includes(searchString.toLowerCase());
+  const searchFn = player => filter =>
+    player.name.toLowerCase().includes(filter.toLowerCase());
 
-  const [playerData] = useFilter(searchFn, players, searchString);
+  const playerData = useFilter(searchFn, players, searchString);
 
   return playerData.length ? (
     <>
