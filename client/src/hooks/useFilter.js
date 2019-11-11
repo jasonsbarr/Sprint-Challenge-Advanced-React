@@ -1,14 +1,16 @@
 import { useCallback } from "react";
 
 const useFilter = (callback, data = [], filter = null) => {
-  const filtered = useCallback(
-    data.filter(item => callback(item)(filter)),
-    [filter],
+  const filtered = filter
+    ? data.filter(item => callback(item)(filter))
+    : data;
+
+  const returnFiltered = useCallback(
+    () => (filtered.length ? filtered : null),
+    [filtered],
   );
 
-  const array = filtered.length ? filtered : null;
-
-  return array;
+  return returnFiltered();
 };
 
 export default useFilter;

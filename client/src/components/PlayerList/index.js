@@ -10,7 +10,7 @@ const PlayerList = ({ players }) => {
 
   const playerData = useFilter(searchFn, players, searchString);
 
-  return playerData.length ? (
+  return (
     <>
       <input
         type="search"
@@ -18,14 +18,16 @@ const PlayerList = ({ players }) => {
         value={searchString}
         onChange={e => setSearchString(e.target.value)}
       />
-      <ul data-testid="player-list">
-        {playerData.map(player => (
-          <Player key={player.name} player={player} />
-        ))}
-      </ul>
+      {playerData ? (
+        <ul data-testid="player-list">
+          {playerData.map(player => (
+            <Player key={player.name} player={player} />
+          ))}
+        </ul>
+      ) : (
+        <div>Players not loaded...</div>
+      )}
     </>
-  ) : (
-    <div>Players not loaded...</div>
   );
 };
 
