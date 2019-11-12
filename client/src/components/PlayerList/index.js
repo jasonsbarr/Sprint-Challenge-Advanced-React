@@ -8,7 +8,16 @@ const PlayerList = ({ players }) => {
   const searchFn = player => filter =>
     player.name.toLowerCase().includes(filter.toLowerCase());
 
-  const playerData = useFilter(searchFn, players, searchString);
+  const [playerData, setPlayerData] = useFilter(
+    searchFn,
+    players,
+    searchString,
+  );
+
+  const handleChange = e => {
+    setSearchString(e.target.value);
+    setPlayerData(e.target.value);
+  };
 
   return (
     <>
@@ -16,7 +25,7 @@ const PlayerList = ({ players }) => {
         type="search"
         placeholder="Search for players by name..."
         value={searchString}
-        onChange={e => setSearchString(e.target.value)}
+        onChange={handleChange}
       />
       {playerData ? (
         <ul data-testid="player-list">

@@ -1,8 +1,10 @@
-import { useCallback } from "react";
+import { useState, useCallback } from "react";
 
 const useFilter = (callback, data = [], filter = null) => {
-  const filtered = filter
-    ? data.filter(item => callback(item)(filter))
+  const [state, setState] = useState(filter);
+
+  const filtered = state
+    ? data.filter(item => callback(item)(state))
     : data;
 
   const returnFiltered = useCallback(
@@ -10,7 +12,9 @@ const useFilter = (callback, data = [], filter = null) => {
     [filtered],
   );
 
-  return returnFiltered();
+  const setFilter = value => setState(value);
+
+  return [returnFiltered(), setFilter];
 };
 
 export default useFilter;
