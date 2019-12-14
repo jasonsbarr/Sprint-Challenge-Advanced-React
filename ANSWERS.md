@@ -1,4 +1,11 @@
 - [ ] Why would you use class component over function components (removing hooks from the question)?
+  - Class components used to be the only way to add state and interact with the component lifecycle/implement side effects in React.
+  - Even with hooks there are still some things you can only do with class components, like error boundaries.
 - [ ] Name three lifecycle methods and their purposes.
+  - `componentDidMount`: perform an effect after the component mounts, usually something asynchronous like data fetching
+  - `componentWillUnmount`: for any necessary cleanup before taking a component out of the DOM, like removing event listeners
+  - `render`: rendering the component to the DOM, both for the initial render and any necessary rerenders when the component state changes
 - [ ] What is the purpose of a custom hook?
+  - Custom hooks allow you to compose behaviors, sometimes using one or more built-in hook, that you need to share between components.
 - [ ] Why is it important to test our apps?
+  - Testing limits the growth of technical debt and other problems caused by unknown effects of the code, poor planning, or cases where users interact with the app in unanticipated ways
